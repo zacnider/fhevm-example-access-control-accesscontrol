@@ -1,6 +1,10 @@
 # EntropyAccessControl
 
-Access control with EntropyOracle, FHE.allow and FHE.allowTransient
+Learn how to implement access control for encrypted values using FHE.allow and FHE.allowTransient
+
+## 🎓 What You'll Learn
+
+This example teaches you how to use FHEVM to build privacy-preserving smart contracts. You'll learn step-by-step how to implement encrypted operations, manage permissions, and work with encrypted data.
 
 ## 🚀 Quick Start
 
@@ -48,20 +52,20 @@ Access control with EntropyOracle, FHE.allow and FHE.allowTransient
 
 ---
 
-## 📋 Overview
+## 📚 Overview
 
 @title EntropyAccessControl
-@notice Access control with EntropyOracle, FHE.allow and FHE.allowTransient
-@dev Example demonstrating EntropyOracle integration: using entropy for access control patterns
-This example shows:
-- How to integrate with EntropyOracle
-- Using entropy to enhance access control patterns
+@notice Access control with encrypted randomness, FHE.allow and FHE.allowTransient
+@dev This example teaches you how to integrate encrypted randomness into your FHEVM contracts: using entropy for access control patterns
+In this example, you will learn:
+- How to integrate encrypted randomness
+- How to use encrypted randomness to enhance access control patterns
 - FHE.allow: Grant specific user decryption rights
 - FHE.allowTransient: Grant temporary access for a single operation
 - Entropy-based access control
 
-@notice Constructor - sets EntropyOracle address
-@param _entropyOracle Address of EntropyOracle contract
+@notice Constructor - sets encrypted randomness address
+@param _encrypted randomness Address of encrypted randomness contract
 
 @notice Initialize with encrypted value
 @param encryptedInput Encrypted value
@@ -69,7 +73,7 @@ This example shows:
 
 @notice Request entropy for access control operations
 @param tag Unique tag for this request
-@return requestId Request ID from EntropyOracle
+@return requestId Request ID from encrypted randomness
 @dev Requires 0.00001 ETH fee
 
 @notice Allow user to decrypt value
@@ -91,15 +95,15 @@ This example shows:
 @param user Address to check
 @return True if user is allowed
 
-@notice Get EntropyOracle address
+@notice Get encrypted randomness address
 
 
 
-## 🔐 Zama FHEVM Usage
+## 🔐 Learn Zama FHEVM Through This Example
 
-This example demonstrates the following **Zama FHEVM** features:
+This example teaches you how to use the following **Zama FHEVM** features:
 
-### Zama FHEVM Features Used
+### What You'll Learn About
 
 - **ZamaEthereumConfig**: Inherits from Zama's network configuration
   ```solidity
@@ -150,19 +154,20 @@ euint64 result = FHE.add(encryptedValue, FHE.asEuint64(1));
 FHE.allowThis(result);
 ```
 
-### Zama FHEVM Concepts Demonstrated
+### FHEVM Concepts You'll Learn
 
-1. **Encrypted Arithmetic**: Using Zama FHEVM to encrypted arithmetic
-2. **Encrypted Comparison**: Using Zama FHEVM to encrypted comparison
-3. **External Encryption**: Using Zama FHEVM to external encryption
-4. **Permission Management**: Using Zama FHEVM to permission management
-5. **Entropy Integration**: Using Zama FHEVM to entropy integration
+1. **Encrypted Arithmetic**: Learn how to use Zama FHEVM for encrypted arithmetic
+2. **Encrypted Comparison**: Learn how to use Zama FHEVM for encrypted comparison
+3. **External Encryption**: Learn how to use Zama FHEVM for external encryption
+4. **Permission Management**: Learn how to use Zama FHEVM for permission management
+5. **Entropy Integration**: Learn how to use Zama FHEVM for entropy integration
 
 ### Learn More About Zama FHEVM
 
 - 📚 [Zama FHEVM Documentation](https://docs.zama.org/protocol)
 - 🎓 [Zama Developer Hub](https://www.zama.org/developer-hub)
 - 💻 [Zama FHEVM GitHub](https://github.com/zama-ai/fhevm)
+
 
 
 ## 🔍 Contract Code
